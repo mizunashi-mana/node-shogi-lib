@@ -1,0 +1,2 @@
+# Shogi Library for Node
+
