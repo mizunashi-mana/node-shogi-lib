@@ -15,6 +15,12 @@
   "dependencies": {
     "node/node.d.ts": {
       "ref": "fa04c80f4a889613b96cb4f283848c61a9f64233"
+    },
+    "cson/cson.d.ts": {
+      "ref": "ba424f7ee39717d51c17699a09ac8df312a7e9a1"
+    },
+    "es6-promises/es6-promises.d.ts": {
+      "ref": "ba424f7ee39717d51c17699a09ac8df312a7e9a1"
     }
   }
 }

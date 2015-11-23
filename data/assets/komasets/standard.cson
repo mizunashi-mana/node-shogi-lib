@@ -1,0 +1,123 @@
+komas: [
+  name: 'FUHYO'
+  show: '歩'
+  moves: [
+    ['*']
+    ['.']
+  ]
+  narikoma: 'TOKIN'
+,
+  name: 'KYOSHA'
+  show: '香'
+  moves: [
+    ['+']
+    ['.']
+  ]
+  narikoma: 'NARIKYO'
+,
+  name: 'KEIMA'
+  show: '桂'
+  moves: [
+    ['*', '-', '*']
+    ['-', '-', '-']
+    ['-', '.', '-']
+  ]
+  narikoma: 'NARIKEI'
+,
+  name: 'GINSHO'
+  show: '銀'
+  moves: [
+    ['*', '*', '*']
+    ['-', '.', '-']
+    ['*', '-', '*']
+  ]
+  narikoma: 'NARIGIN'
+,
+  name: 'KINSHO'
+  show: '金'
+  moves: [
+    ['*', '*', '*']
+    ['*', '.', '*']
+    ['-', '*', '-']
+  ]
+,
+  name: 'HISHA'
+  show: '飛'
+  moves: [
+    ['-', '+', '-']
+    ['+', '.', '+']
+    ['-', '+', '-']
+  ]
+  narikoma: 'RYUOU'
+,
+  name: 'KAKUGYO'
+  show: '角'
+  moves: [
+    ['+', '-', '+']
+    ['-', '.', '-']
+    ['+', '-', '+']
+  ]
+  narikoma: 'RYUMA'
+,
+  name: 'TOKIN'
+  show: 'と'
+  moves: [
+    ['*', '*', '*']
+    ['*', '.', '*']
+    ['-', '*', '-']
+  ]
+  origkoma: 'FUHYO'
+,
+  name: 'NARIKYO'
+  show: '杏'
+  moves: [
+    ['*', '*', '*']
+    ['*', '.', '*']
+    ['-', '*', '-']
+  ]
+  origkoma: 'KYOSHA'
+,
+  name: 'NARIKEI'
+  show: '圭'
+  moves: [
+    ['*', '*', '*']
+    ['*', '.', '*']
+    ['-', '*', '-']
+  ]
+  origkoma: 'KEIMA'
+,
+  name: 'NARIGIN'
+  show: '全'
+  moves: [
+    ['*', '*', '*']
+    ['*', '.', '*']
+    ['-', '*', '-']
+  ]
+  origkoma: 'GINSHO'
+,
+  name: 'RYUOU'
+  show: '龍'
+  moves: [
+    ['*', '+', '*']
+    ['+', '.', '+']
+    ['*', '+', '*']
+  ]
+  origkoma: 'HISHA'
+,
+  name: 'RYUMA'
+  show: '馬'
+  moves: [
+    ['+', '*', '+']
+    ['*', '.', '*']
+    ['+', '*', '+']
+  ]
+  origkoma: 'KAKUGYO'
+,
+  name: 'OUSHO'
+  show: '王'
+  moves: [
+    ['*', '*', '*']
+    ['*', '.', '*']
+    ['*', '*', '*']
+  ]
+]

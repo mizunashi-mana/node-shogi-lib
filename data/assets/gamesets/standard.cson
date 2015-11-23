@@ -1,0 +1,28 @@
+playercount: 2
+#order: [0, 1](random)
+board:
+  width: 9
+  height: 9
+  onboard:
+    komas: [
+      ['KYOSHA',   'KEIMA',    'GINSHO',   'KINSHO',   'OUSHO',    'KINSHO',   'GINSHO',   'KEIMA',    'KYOSHA']
+      ['',         'HISHA',    '',         '',         '',         '',         '',         'KAKUGYO',  '']
+      ['FUHYO',    'FUHYO',    'FUHYO',    'FUHYO',    'FUHYO',    'FUHYO',    'FUHYO',    'FUHYO',    'FUHYO']
+      ['',         '',         '',         '',         '',         '',         '',         '',         '']
+      ['',         '',         '',         '',         '',         '',         '',         '',         '']
+      ['',         '',         '',         '',         '',         '',         '',         '',         '']
+      ['FUHYO',    'FUHYO',    'FUHYO',    'FUHYO',    'FUHYO',    'FUHYO',    'FUHYO',    'FUHYO',    'FUHYO']
+      ['',         'KAKUGYO',  '',         '',         '',         '',         '',         'HISHA',    '']
+      ['KYOSHA',   'KEIMA',    'GINSHO',   'KINSHO',   'OUSHO',    'KINSHO',   'GINSHO',   'KEIMA',    'KYOSHA']
+    ]
+    colors: [
+      [1,  1,  1,  1,  1,  1,  1,  1,  1]
+      [-1, 1,  -1, -1, -1, -1, -1, 1,  -1]
+      [1,  1,  1,  1,  1,  1,  1,  1,  1]
+      [-1, -1, -1, -1, -1, -1, -1, -1, -1]
+      [-1, -1, -1, -1, -1, -1, -1, -1, -1]
+      [-1, -1, -1, -1, -1, -1, -1, -1, -1]
+      [0,  0,  0,  0,  0,  0,  0,  0,  0]
+      [-1, 0,  -1, -1, -1, -1, -1, 0,  -1]
+      [0,  0,  0,  0,  0,  0,  0,  0,  0]
+    ]
