@@ -1,0 +1,22 @@
+# no publish
+dist
+docs
+src
+node_modules
+test
+test-build
+
+# documents
+CHANGELOG.md
+
+# resource
+.*
+*lint.json
+tsconfig.json
+dtsm.json
+gulp*
+
+# garbages
+*.log
+.DS_Store
+.vscode

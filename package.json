@@ -1,0 +1,57 @@
+{
+  "name": "shogi-lib",
+  "version": "0.0.1",
+  "description": "a library for shogi on node",
+  "main": "./lib/index.js",
+  "scripts": {
+    "prepublish": "dtsm --config ./dtsm.json install && gulp build --production",
+    "clean": "gulp clean",
+    "remove": "gulp remove",
+    "lint": "gulp lint",
+    "build": "gulp build --production",
+    "doc": "gulp build:doc",
+    "test": "gulp lint && gulp test --production",
+    "devBuild": "gulp lint && gulp build --debug",
+    "devTest": "gulp test --debug",
+    "dinstall": "dtsm --config ./dtsm.json install --save",
+    "dupdate": "dtsm --config ./dtsm.json update --save"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mizunashi-mana/node-shogi-lib.git"
+  },
+  "author": {
+    "name": "Mizunashi Mana",
+    "email": "mizunashi_mana@mma.club.uec.ac.jp"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mizunashi-mana/node-shogi-lib/issues"
+  },
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "homepage": "https://github.com/mizunashi-mana/node-shogi-lib#readme",
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "dtsm": "^0.13.0",
+    "gulp": "^3.9.0",
+    "gulp-coffeelint": "^0.5.0",
+    "gulp-filter": "^3.0.1",
+    "gulp-header": "^1.7.1",
+    "gulp-if": "^2.0.0",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-tslint": "^3.6.0",
+    "gulp-typedoc": "^1.2.1",
+    "gulp-typescript": "^2.9.2",
+    "gulp-util": "^3.0.7",
+    "merge2": "^0.3.6",
+    "rimraf": "^2.4.4",
+    "run-sequence": "^1.1.5",
+    "yargs": "^3.30.0"
+  },
+  "dependencies": {
+    "cson": "^3.0.2"
+  }
+}
