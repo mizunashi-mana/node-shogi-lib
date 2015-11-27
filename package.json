@@ -52,7 +52,6 @@
     "yargs": "^3.30.0"
   },
   "dependencies": {
-    "cson": "^3.0.2",
-    "sonparser": "^0.1.0"
+    "sonparser": "^0.1.2"
   }
 }

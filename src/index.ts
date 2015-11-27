@@ -1,20 +1,25 @@
 /// <reference path="./lib/typings.d.ts" />
 
-import * as CSON from "cson";
 import * as sp from "sonparser";
 
 import * as tutil from "./lib/type-util";
 import * as util from "./lib/util";
 
-export interface OnBoardData {
+export interface OnBoardKomaData {
   komas: string[][];
   colors: number[][];
+}
+
+export interface OnHandKomaData {
+  komas: tutil.HashMap<number>;
+  color: number;
 }
 
 export interface BoardData {
   width: number;
   height: number;
-  onboard: OnBoardData;
+  onboard: OnBoardKomaData;
+  onhands: OnHandKomaData[];
 }
 
 export interface GameSetData {
@@ -66,10 +71,13 @@ const gameset_parser = sp.hasProperties<GameSetData>([
   ["board", sp.hasProperties<GameSetData>([
     ["width", sp.number],
     ["height", sp.number],
-    ["onboard", sp.hasProperties<OnBoardData>([
+    ["onboard", sp.hasProperties<OnBoardKomaData>([
       ["komas", sp.array(sp.array(sp.string.map((s) => s == "" ? "NONE" : s)))],
       ["colors", sp.array(sp.array(sp.number))],
     ])],
+    ["onhands", sp.array(sp.hasProperties<OnHandKomaData>([
+      ["komas", sp.array]
+    ]))]
   ])],
 ]);
 
@@ -96,3 +104,4 @@ function printBoard(bd: BoardData): void {
 }
 
 printBoard(gameset_data.board);
+
